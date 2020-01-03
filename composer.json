@@ -18,7 +18,7 @@
     },
 
     "scripts": {
-        "post-update-cmd": [
+        "post-package-install": [
             "sh ./vendor/jesgs/wordpress-dev/post-install.sh"
         ]
     },
