@@ -35,5 +35,5 @@
             "email": "2304490+jesgs@users.noreply.github.com"
         }
     ],
-    "minimum-stability": "stable"
+    "prefer-stable": true
 }
