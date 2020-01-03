@@ -13,7 +13,7 @@ Creates a basic WordPress development environment using Composer.
 More on [Laravel Homestead](https://laravel.com/docs/5.7/homestead).
 
 ## Installation
-
+Create a `composer.json` in your root directory, and add the following lines:
 ```json
 {
     "repositories": [
@@ -23,7 +23,7 @@ More on [Laravel Homestead](https://laravel.com/docs/5.7/homestead).
         },
         {
             "type": "vcs",
-            "url": "https://github.com/jesgs-Interactive/wordpress-dev"
+            "url": "https://github.com/jesgs-interactive/wordpress-dev"
         }
     ],
 

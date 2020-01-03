@@ -16,6 +16,13 @@
         "johnpbloch/wordpress": "^5.3",
         "symfony/var-dumper": "^4.4"
     },
+
+    "scripts": {
+        "post-update-cmd": [
+            "sh ./vendor/jesgs/wordpress-dev/post-install.sh"
+        ]
+    },
+
     "autoload": {
         "psr-4": {
             "JesGs\\": "src"
