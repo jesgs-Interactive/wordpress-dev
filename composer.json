@@ -16,16 +16,6 @@
         "johnpbloch/wordpress": "^5.3",
         "symfony/var-dumper": "^4.4"
     },
-    "scripts": {
-        "post-install-cmd": [
-            "JesGs\\WP_Dev::postInstall"
-        ]
-    },
-    "autoload": {
-        "psr-4": {
-            "JesGs\\": "src"
-        }
-    },
     "license": "MIT",
     "authors": [
         {
