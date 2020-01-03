@@ -1,0 +1,52 @@
+{
+    "name": "jesgs/wordpress-dev",
+    "description": "Basic WordPress development environment using Homestead",
+    "type": "library",
+    "config": {
+        "platform": {
+            "php": "7.2"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],    
+    "require": {
+        "laravel/homestead": "^10.1",
+        "composer/installers": "^1.7",
+        "vlucas/phpdotenv": "^4.1",
+        "oscarotero/env": "^1.2",
+        "roots/wp-config": "^1.0",
+        "johnpbloch/wordpress": "^5.3",
+        "symfony/var-dumper": "^4.4"
+    },
+    "require-dev" : {
+        "wpackagist-plugin/debug-bar": "1.0",
+        "wpackagist-plugin/debug-bar-actions-and-filters-addon": "1.5.4",
+        "wpackagist-plugin/debug-bar-slow-actions": "0.8.4"
+    },
+    "extra": {
+        "wordpress-install-dir": "core",
+        "installer-paths": {
+            "content/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "content/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jesgs",
+            "email": "2304490+jesgs@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
