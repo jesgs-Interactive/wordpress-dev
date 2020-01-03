@@ -7,12 +7,6 @@
             "php": "7.2"
         }
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://wpackagist.org"
-        }
-    ],    
     "require": {
         "laravel/homestead": "^10.1",
         "composer/installers": "^1.7",
@@ -20,23 +14,16 @@
         "oscarotero/env": "^1.2",
         "roots/wp-config": "^1.0",
         "johnpbloch/wordpress": "^5.3",
-        "symfony/var-dumper": "^4.4",
-        "wpackagist-plugin/debug-bar": "1.0",
-        "wpackagist-plugin/debug-bar-actions-and-filters-addon": "1.5.4",
-        "wpackagist-plugin/debug-bar-slow-actions": "0.8.4"
+        "symfony/var-dumper": "^4.4"
     },
-    "extra": {
-        "wordpress-install-dir": "core",
-        "installer-paths": {
-            "content/mu-plugins/{$name}/": [
-                "type:wordpress-muplugin"
-            ],
-            "content/plugins/{$name}/": [
-                "type:wordpress-plugin"
-            ],
-            "content/themes/{$name}/": [
-                "type:wordpress-theme"
-            ]
+    "scripts": {
+        "post-install-cmd": [
+            "JesGs\\WP_Dev::postInstall"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "JesGs\\": "src"
         }
     },
     "license": "MIT",
