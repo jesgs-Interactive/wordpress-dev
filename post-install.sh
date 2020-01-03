@@ -7,4 +7,8 @@ if [ ! -f "wp-config.php" ]; then
     cp php.ini ../../../php.ini
     cp phpinfo.php ../../../phpinfo.php
     cp wp-config.php ../../../wp-config.php
+
+    echo "Create Homestead environment"
+
+    ./vendor/bin/homestead make
 fi
