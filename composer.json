@@ -20,9 +20,7 @@
         "oscarotero/env": "^1.2",
         "roots/wp-config": "^1.0",
         "johnpbloch/wordpress": "^5.3",
-        "symfony/var-dumper": "^4.4"
-    },
-    "require-dev" : {
+        "symfony/var-dumper": "^4.4",
         "wpackagist-plugin/debug-bar": "1.0",
         "wpackagist-plugin/debug-bar-actions-and-filters-addon": "1.5.4",
         "wpackagist-plugin/debug-bar-slow-actions": "0.8.4"
