@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ ! -f "composer.lock" ]; then
+if [ ! -f "wp-config.php" ]; then
     cd `pwd`/vendor/jesgs/wordpress-dev/
 
     cp index.php ../../../index.php
