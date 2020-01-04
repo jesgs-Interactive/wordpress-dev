@@ -1,7 +1,7 @@
 {
     "name": "jesgs/wordpress-dev",
     "description": "Basic WordPress development environment using Homestead",
-    "type": "library",
+    "type": "project",
     "config": {
         "platform": {
             "php": "7.2"
