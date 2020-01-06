@@ -1,16 +1,13 @@
 #!/bin/bash
 if [ ! -f "wp-config.php" ]; then
-    rootPwd=`pwd`
 
-    cd `pwd`/vendor/jesgs/wordpress-dev/
+    cp vendor/jesgs/wordpress-dev/index.php index.php
+    cp vendor/jesgs/wordpress-dev/.env.example .env.example
+    cp vendor/jesgs/wordpress-dev/php.ini php.ini
+    cp vendor/jesgs/wordpress-dev/phpinfo.php phpinfo.php
+    cp vendor/jesgs/wordpress-dev/wp-config.php wp-config.php
+    cp -rf core/themes/ content/themes/
 
-    cp index.php ../../../index.php
-    cp .env.example ../../../.env.example
-    cp php.ini ../../../php.ini
-    cp phpinfo.php ../../../phpinfo.php
-    cp wp-config.php ../../../wp-config.php
-
-    cd ../../bin/
-    echo "Create Homestead environment"
+    echo "Create Homestead environment..."
     ./homestead make
 fi

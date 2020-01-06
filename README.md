@@ -12,18 +12,6 @@ Creates a basic WordPress development environment using Composer.
 
 More on [Laravel Homestead](https://laravel.com/docs/5.7/homestead).
 
-Note: The newest version of Homestead comes with PHP 7.4 enabled by default. While WordPress will work with
-PHP 7.4, you will see a number of deprecation notices. To fix, it's easier to set the default PHP version back
-to 7.0–7.2.
-
-Example:
-```yaml
-# sites section in Homestead.yml
-sites:
-    -
-        php: "7.0"
-```
-
 ## Installation
 Create a `composer.json` in your root directory, and add the following lines:
 ```json
@@ -64,4 +52,19 @@ Create a `composer.json` in your root directory, and add the following lines:
         }
     }
 }
+```
+
+Run `composer install`, which will install the dependencies needed, and install WordPress in the `core` directory, and
+create and install plugins into the `content` directory
+
+Note: The newest version of Homestead comes with PHP 7.4 enabled by default. While WordPress will work with
+PHP 7.4, you will see a number of deprecation notices. To fix, it's easier to set the default PHP version back
+to 7.0–7.2.
+
+Example:
+```yaml
+# sites section in Homestead.yml
+sites:
+    -
+        php: "7.0"
 ```
