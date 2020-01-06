@@ -6,8 +6,9 @@ if [ ! -f "wp-config.php" ]; then
     cp vendor/jesgs/wordpress-dev/php.ini php.ini
     cp vendor/jesgs/wordpress-dev/phpinfo.php phpinfo.php
     cp vendor/jesgs/wordpress-dev/wp-config.php wp-config.php
+    mkdir content/themes
     cp -rf core/themes/ content/themes/
 
     echo "Create Homestead environment..."
-    ./homestead make
+    ./vendor/bin/homestead make
 fi
