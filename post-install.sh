@@ -10,7 +10,7 @@ if [ ! -f "wp-config.php" ]; then
     cp phpinfo.php ../../../phpinfo.php
     cp wp-config.php ../../../wp-config.php
 
-    cd `rootPwd`
+    cd ../../bin/
     echo "Create Homestead environment"
-    ./vendor/bin/homestead make
+    ./homestead make
 fi
